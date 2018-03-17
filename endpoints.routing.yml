@@ -1,0 +1,42 @@
+endpoints.getuser:
+  path: '/json/getuser'
+  defaults:
+    _controller: 'Drupal\endpoints\Controller\EndpointsJsonController::getUser'
+  methods:  [GET]
+  requirements:
+    _permission: 'access content'
+
+endpoints.post:
+  path: '/json/post'
+  defaults:
+    _controller: 'Drupal\endpoints\Controller\EndpointsJsonController::post'
+  methods:  [POST]
+  requirements:
+    _permission: 'access content'
+
+endpoints.put:
+  path: '/json/put'
+  defaults:
+    _controller: 'Drupal\endpoints\Controller\EndpointsJsonController::put'
+  methods:  [PUT]
+  requirements:
+    _access: 'TRUE'
+
+endpoints.delete:
+  path: '/json/delete'
+  defaults:
+    _controller: 'Drupal\endpoints\Controller\EndpointsJsonController::delete'
+  methods:  [DELETE]
+  requirements:
+    _access: 'TRUE'
+
+endpoints.login:
+  path: '/cues/login'
+  defaults:
+    _controller: 'Drupal\endpoints\Controller\CuesJsController::login'
+  requirements:
+    _permission: 'access content'
+
+
+
+    

@@ -1,0 +1,7 @@
+endpoints.api:
+  version: 1.x
+  js:
+    js/endpoints.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal

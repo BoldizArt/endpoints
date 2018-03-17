@@ -1,0 +1,11 @@
+<?php
+
+function endpoints_preprocess_page(){
+	
+}
+
+function endpoints_page_attachments(array &$attachments) {
+ 
+    $attachments['#attached']['library'][] = 'endpoints/endpoints.api'; 
+
+}
